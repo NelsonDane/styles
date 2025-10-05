@@ -2,6 +2,9 @@ line-length = 320 # I don't like text wrapping
 indent-width = 4
 preview = true
 
+[format]
+line-ending = "lf"
+
 [lint]
 select = ["ALL"]
 ignore = [

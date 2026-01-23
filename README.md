@@ -7,6 +7,15 @@ This repository contains a centralized location for style configurations for use
 ## Current Styles
 Add this repository as a git submodule, then extend the relevant style in your project's configuration file.
 
+### Golang
+- [GolangCI-Lint](https://golangci-lint.run/)
+- [Goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports)
+
+To use, simply run `go mod tidy`, and it will pick up the `tools.go` file automatically.
+
+Used in:
+- [Renovate GitHub App Injector for K8S](https://github.com/NelsonDane/renovate-token-injector)
+
 ### Python
 - [Ruff](https://github.com/charliermarsh/ruff)
 

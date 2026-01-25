@@ -1,0 +1,35 @@
+{
+  // https://docs.renovatebot.com/configuration-options/
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices"
+  ],
+  "labels": [
+    "renovate",
+    "dependencies"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      // Group all digest updates into a single PR
+      "groupName": "Digest Updates",
+      "groupSlug": "all-digest",
+      "matchPackageNames": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "digest"
+      ]
+    },
+    {
+      // Automerge dev dependencies
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true
+    }
+  ]
+}

@@ -29,3 +29,17 @@ extend = ["./styles/ruff.toml"]
 Used in:
 - [Fennel Invest API](https://github.com/NelsonDane/fennel-invest-api)
 - [Public Invest API](https://github.com/NelsonDane/public-invest-api)
+
+### Renovate
+- [Renovate Configuration](https://docs.renovatebot.com/configuration-options)
+
+To use, extend the renovate configuration in `renovate.json`:
+
+```json
+{
+    "extends": ["github>NelsonDane/styles:renovate.json5"]
+}
+```
+
+Used in:
+- All my projects lol

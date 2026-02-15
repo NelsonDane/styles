@@ -30,6 +30,15 @@
         "devDependencies"
       ],
       "automerge": true
+    },
+    {
+      // Automerge non-breaking changes
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
     }
   ]
 }

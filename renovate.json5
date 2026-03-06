@@ -12,6 +12,12 @@
     "enabled": true,
     "automerge": true
   },
+  // https://docs.renovatebot.com/modules/manager/nix/
+  "nix": {
+    "enabled": true
+  },
+  // https://docs.renovatebot.com/updating-rebasing/
+  "rebaseWhen": "behind-base-branch",
   "packageRules": [
     {
       // Group all digest updates into a single PR
